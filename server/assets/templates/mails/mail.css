@@ -1,0 +1,124 @@
+.mail-content{
+  background: #ffffff!important;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+img,
+a img, a {
+  border: 0;
+  height: auto;
+  outline: none;
+  text-decoration: none;
+}
+
+a {
+color:#6BAF65;
+}
+
+body,
+#bodyTable,
+#bodyCell {
+  font-family: 'Open Sans', 'Segoe UI', 'SanFrancisco Display', Arial, sans-serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+h1{
+  text-align: center;
+  color:#6BAF65;
+}
+
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+.message,
+.logo {
+  color: #707070;
+  padding: 65px;
+  font-size: 14px;
+}
+
+.logo {
+  padding: 65px 0px 0px 65px;
+}
+
+.footer {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+}
+
+.short-token {
+  width: 80%;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  color: #6BAF65;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+.token-link {
+  background-color: #6BAF65;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  color: white;
+  text-decoration: none;
+}
+
+#bodyCell {
+  padding: 40px 10px;
+  border-top: 0;
+}
+
+.templateContainer {
+  min-width: 600px !important;
+}
+
+.important-txt{
+  font-weight: bold;
+}
+
+.details,.comment{
+  background-color: #F5F5F5;
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.comment{
+  font-style: italic;
+}

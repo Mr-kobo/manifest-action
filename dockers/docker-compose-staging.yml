@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  nutri-mongo:
+    container_name: nutri-mongo
+    image: mongo
+    restart: on-failure
+    command: mongod --quiet --logpath /dev/null
+    volumes:
+      - /var/data/boilerplate/db:/data/db
+    ports:
+      - '39017:27017'
+    networks:
+      - boilerplate
+
+  nutri-app:
+    container_name: nutri-app
+    build: 
+      context: ./..
+      dockerfile: Dockerfile
+      args:
+        - STAGING=true
+    environment:
+      - AUTH_ORIGIN=https://www.boilerplate.staging.superdev.fr
+      - NEXTAUTH_URL=https://www.boilerplate.staging.superdev.fr
+    ports:
+      - '39300:3000'
+    links:
+      - 'nutri-mongo:mongo'
+    depends_on:
+      - nutri-mongo
+    networks:
+      - boilerplate
+
+networks:
+  boilerplate:
+    

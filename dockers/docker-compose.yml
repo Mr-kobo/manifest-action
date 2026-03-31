@@ -1,0 +1,9 @@
+services:
+  nutri-mongo:
+    container_name: nutri-mongo
+    image: mongo
+    restart: on-failure
+    ports:
+      - "27017:27017"
+    volumes:
+      - ~/docker-persistent/boilerplate/db:/data/db
